@@ -1,0 +1,516 @@
+@charset "utf-8";
+/* 
+	example.com "MUSE - coding is poetry" CSS
+	only for Firefox 3 and Internet Explorer 8
+	
+	use no images!
+	
+	autor: Balázs Szilágyi, zyxneo@gmail.com
+	
+*/
+
+/* STANDARD */
+*{margin:0;padding:0;border:0;list-style:none;vertical-align:baseline;background:transparent;font-size:12px;font-weight:normal;font-style:normal;font-variant:normal;line-height:18px;letter-spacing:0px;text-align:left;text-decoration:none;text-indent:0}html,body{}div{}span{}center{display:block;text-align:center}h1,h2,h3,h4,h5,h6{font-weight:bold;line-height:20px;margin:10px 0;padding:5px 0}h1{font-size:24px;line-height:28px}h2{font-size:22px;line-height:26px}h3{font-size:20px;line-height:24px}h4{font-size:18px;line-height:22px}h5{font-size:16px;line-height:20px}h6{font-size:14px;line-height:18px}p,dl,multicol{display:block;margin:10px 0}blockquote{margin:10px 40px}address{ display:block; font-style:italic}img{}font{}strong, b{font-weight:bold}u,ins{text-decoration:underline}i,cite,var,dfn,em{font-style:italic}s,strike,del{text-decoration:line-through}code,tt,samp,kbd{font-family:"Courier New", Courier, monospace}blink{ text-decoration:blink}big{ font-size:larger}small{ font-size:smaller}sub{ vertical-align:sub; font-size:smaller; line-height:normal}sup{ vertical-align:super; font-size:smaller; line-height:normal}abbr,acronym{border-bottom:1px dotted}q{quotes:"« " " »"}q:before{ content:open-quote}q:after{ content:close-quote}ol,ul,dir,menu{margin:10px 0;padding:0 0 0 25px}li{list-style:disc}ol li{list-style:decimal}fieldset,form,label,legend{}legend{}table,caption,tbody,tfoot,thead,tr,th,td{border-collapse:collapse;border-spacing:0}table{table-layout:auto}table[align="left"]{ float:left}table[align="right"]{ float:right; text-align:start}caption{ display:table-caption; text-align:center}table[align="center"] > caption{ margin-left:auto; margin-right:auto}table[align="center"] > caption[align="left"]{ margin-right:0}table[align="center"] > caption[align="right"]{ margin-left:0}tr{ display:table-row; vertical-align:inherit}col{ display:table-column}colgroup{ display:table-column-group}tbody{ display:table-row-group; vertical-align:middle}thead{ display:table-header-group; vertical-align:middle}tfoot{ display:table-footer-group; vertical-align:middle}td{ display:table-cell; vertical-align:inherit; text-align:inherit; padding:2px}th{ display:table-cell; vertical-align:inherit; font-weight:bold; padding:2px}hr{border-top:1px solid #ccc;border-bottom:1px solid #fff}
+
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#b2c1b9;
+	color:#453f32;
+	margin:0 5px 0 25px;
+}
+a:link{color:#900;outline:none;}
+a:visited{color:#600;outline:none;}
+a:hover{color:#f00;outline:none;}
+a:active{color:#fff;outline:none;}
+p{text-align:justify;}
+
+/* SITE */
+
+#wrapper{
+	background-color:#FFFFFF;
+	padding:0 0 0 5px;
+	width:954px;
+	float:left;
+	border:1px solid #8d9c94;
+	border-bottom:none;
+	border-top:none;
+}
+#main{
+	position:relative;
+	background-color:#e7d5a7;
+	padding:0;
+	width:496px;
+	float:left;
+	margin-left:302px;
+	z-index:3;
+	border:1px solid #c2b082;
+	border-bottom:none;
+	border-top:none;
+}
+
+/* HEADER */
+
+#header h1{
+	font-size:60px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-style:italic;
+	font-weight:normal;
+}
+#header h1:before{
+	content:open-quote;
+}
+#header h1:after{
+	content:close-quote;
+}
+#header h1{
+	color:#990000;
+	background-color:#f8ecce;
+	border:1px solid #d6be80;
+	border-left:none;
+	border-right:none;
+	font-family:Palatino Linotype,Book Antiqua3,Palatino6,serif;
+	font-size:122px;
+	font-style:normal;
+	font-weight:bold;
+	height:170px;
+	letter-spacing:21px;
+	line-height:22px;
+	overflow:hidden;
+	quotes:"" " MUSE";
+	text-indent:9999px;
+	width:100%;
+	text-align:center;
+	margin:30px 0;
+	cursor:default;
+}
+#header h1 span{
+	color:#000;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight:normal;
+	font-style:italic;
+}
+#header p:before{content:open-quote;}
+#header p:after{content:close-quote;}
+#header p{
+	position:relative;
+	margin:-57px -1px 0 -1px;
+	padding:0 28px;
+	quotes:"The engine come to a standstill, but the Man keep walking... /" "/";
+	background-color:#fff;
+	border-top:1px solid #e2d1ab;
+	border-bottom:1px solid #e2d1ab;
+	color:#C2B082;
+	cursor:default;
+	word-spacing:2px;
+}
+
+/* NAV */
+
+#nav{
+	position:absolute;
+	position:fixed;
+	margin-top:7px;
+	margin-left:-302px;
+	padding:2px 0;
+	quotes:"a" "";
+	font-size:700px;
+	color:#6f0000;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	overflow:hidden;
+	height:1000px;
+	width:295px;
+	cursor:default;
+}
+#nav ul{
+	position:relative;
+	padding:60px 0;
+	margin:0;
+}
+#nav ul li{
+	display:block;
+	list-style:none;
+}
+#nav a, #nav a:visited{
+	display:block;
+	margin:0;
+	padding:0;
+	color:#900;
+}
+#nav a:hover{color:#f00;}
+#nav a:active{
+	color:#fff;
+}
+#nav a span{
+	display:block;
+	padding:4px 0;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/* CONTAINER */
+
+#container:before{content:open-quote;}
+#container:after{content:close-quote;}
+#container{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	quotes:"g" "";
+	line-height:0px;
+	font-size:600px;
+	cursor:default;
+	color:#e3ce9b;
+	z-index:-2;
+	text-indent:-50px;
+	overflow:hidden;
+	margin-top:7px;
+}
+#content em{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight:bold;
+	font-size:14px;
+}
+#content{
+	padding:0px 28px 0;
+	color:#453f32;
+	position:relative;
+	z-index:1;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#content h1:before{content:open-quote;}
+#content h1:after{content:close-quote;}
+#content h1, #content h2, dt{
+	quotes:"" " und Auflösung";
+	font-size:26px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	font-weight:normal;
+	color:#900;
+	cursor:default;
+	letter-spacing:2px;
+	word-spacing:10px;
+	border-bottom:1px solid #dbc07b;
+	margin-bottom:0;
+	padding-bottom:15px;
+	padding-top:50px;
+}
+#content h1 span, #content h2 span, dt strong{
+	font-size:26px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	color:#453f32;
+	letter-spacing:2px;
+	font-weight:normal;
+}
+#content h1 + p, #content h2 + p{
+	margin-top:0;
+	border-top:1px solid #f3ead3;
+	padding-top:15px;
+}
+dt + dd + dd, dt + dd + dd + dd{
+	display:none;
+}
+dl{
+	border-bottom:1px solid #F3EAD3;
+	margin:15px 0;
+}
+dt strong{
+	border-bottom:none;
+	margin-top:0;
+}
+dd:before{content:open-quote;}
+dd:after{content:close-quote;}
+dd{
+	display:block;
+	quotes:"√   " "";
+	color:#990000;
+	font-family:georgia;
+	font-weight:bold;
+}
+dt + dd{
+	border-top:1px solid #F3EAD3;
+	padding-top:15px;
+}
+dt + dd + dd, dt + dd + dd + dd + dd{
+	border-bottom:1px solid #DBC07B;
+	padding-bottom:15px;
+}
+blockquote:before{content:open-quote;}
+blockquote:after{content:close-quote;}
+blockquote{
+	color:#E3CE9B;
+	font-family:"Times New Roman",Times,serif;
+	font-size:300px;
+	letter-spacing:242px;
+	line-height:0;
+	margin:110px 0 -35px;
+	quotes:"“ " " ”";
+	text-indent:-10px;
+}
+blockquote p{
+	color:#453F32;
+	margin-top:-100px;
+	position:relative;
+	padding:15px 35px 40px;
+	padding-bottom:30px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/* FLICKR */
+
+.flickr{
+	background-color:#770000;
+	height:100%;
+	margin-left:496px;
+	position:absolute;
+	top:0;
+}
+.flickr h4{
+	background-color:#900;
+	border-top:1px solid #600;
+	border-bottom:1px solid #600;
+	height:144px;
+	margin-top:30px;
+}
+.flickr h4 span{
+	position:absolute;
+	background-color:#fff;
+	margin:150px 0 0 0;
+	overflow:hidden;
+	height:18px;
+	color:#700;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.flickr_badge_image:before{content:open-quote;}
+.flickr_badge_image:after{content:close-quote;}
+.flickr_badge_image{
+	background-color:#fbf5e5;
+	color:#500;
+	font-size:38px;
+	line-height:15px;
+	margin:6px 6px;
+	padding:4px 2px;
+	quotes:"‘‘‘‘‘‘‘‘" "";
+	text-align:center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	cursor:default;
+}
+#flickr_badge_image1{
+	margin-top:25px;
+}
+.flickr_badge_image a:before{content:open-quote;}
+.flickr_badge_image a:after{content:close-quote;}
+.flickr_badge_image a{
+	display:block;
+	text-align:center;
+	line-height:1px;
+	margin-top:-6px;
+}
+.flickr_badge_image a img{
+	margin-top:6px;
+	border:1px solid #C2B082;
+	padding:2px;
+	background-color:#fff;
+}    
+#flickr_badge_image1 a{
+	quotes:"January" "";
+}
+#flickr_badge_image2 a{
+	quotes:"February" "";
+}
+#flickr_badge_image3 a{
+	quotes:"March" "";
+}
+#flickr_badge_image4 a{
+	quotes:"April" "";
+}
+#flickr_badge_image5 a{
+	quotes:"May" "";
+}
+#flickr_badge_image6 a{
+	quotes:"June" "";
+}
+#flickr_badge_image7 a{
+	quotes:"July" "";
+}
+#flickr_badge_image8 a{
+	quotes:"August" "";
+}
+#flickr_badge_image9 a{
+	quotes:"September" "";
+}
+
+/* LINKS */
+
+#links:before{content:open-quote;}
+#links:after{content:close-quote;}
+#links{
+	color:#DBC07B;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-size:16px;
+	font-weight:bold;
+	letter-spacing:-3px;
+	quotes:"——————————«zzzz»=<|>—¤{ § }¤—<|>=«zzzz»——————————" "";
+	text-align:center;
+	margin-top:40px;
+	margin-bottom:20px;
+	border-bottom:1px solid #F3EAD3;
+}
+#links h4, #links ul{
+	text-align:left;
+}
+#links h4:before{content:open-quote;}
+#links h4:after{content:close-quote;}
+#links h4{
+	quotes:"——————————«zzzz»=<|>—¤{ § }¤—<|>=«zzzz»——————————" "";
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-size:16px;
+	font-weight:bold;
+	letter-spacing:-3px;
+	text-align:center;
+	color:#F3EAD3;
+	margin-top:-24px;
+	position:relative;
+	z-index:-1;
+}
+#links h4 span{
+	display:block;
+	padding:15px 28px 25px;
+	font-size:26px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	font-weight:normal;
+	color:#453F32;
+	letter-spacing:2px;
+	word-spacing:10px;
+	border-bottom:1px solid #c9b37d;
+}
+#links ul:before{content:open-quote;}
+#links ul:after{content:close-quote;}
+#links ul{
+	background-color:#E3CE9B;
+	border-bottom:1px solid #D6BE80;
+	border-top:1px solid #ddc794;
+	border-left:1px solid #C9B37D;
+	color:#E0C994;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-size:600px;
+	height:160px;
+	line-height:160px;
+	overflow:hidden;
+	padding:10px 28px;
+	position:relative;
+	quotes:"k" "";
+	text-indent:166px;
+	z-index:8;
+	margin-top:-15px;
+	margin-bottom:0;
+}
+#links li:before{content:open-quote;}
+#links li:after{content:close-quote;}
+#links li{
+	color:#FFFFFF;
+	display:block;
+	font-size:20px;
+	font-weight:bold;
+	letter-spacing:-4px;
+	position:relative;
+	quotes:"●" "";
+	padding:1px 0;
+	margin-left:15px;
+	
+}
+#links ul li:hover{
+	border-bottom:1px solid #E0C994;
+	border-top:1px solid #E0C994;
+	padding:0;
+}
+#links ul li:first-child{
+	margin-top:-128px;
+}
+#links ul li a:before{content:open-quote;}
+#links ul li a:after{content:close-quote;}
+#links ul li a, #links ul li a:visited{
+	display:block;
+	line-height:22px;
+	margin-left:3px;
+	margin-top:-20px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:1px 0;
+	position:relative;
+	quotes:"+   " "";
+	z-index:10;
+}
+#links ul li a:hover{
+	border-bottom:1px solid #E7D5A7;
+	border-top:1px solid #E7D5A7;
+	padding:0;
+
+}
+
+/* FOOTER */
+
+#footer:before{content:open-quote;}
+#footer:after{content:close-quote;}
+#footer{
+	float:left;
+	position:fixed;
+	height:100%;
+	width:295px;
+	padding:0px 0 0 0;
+	margin:0;
+	quotes:"" "…";
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:normal;
+	font-weight:bold;
+	font-size:200px;
+	text-align:center;
+	color:#fff;
+	background-color:#700;
+	z-index:2;
+	border-left:1px solid #600;
+	border-right:1px solid #600;
+	line-height:53px;
+	cursor:default;
+}
+#footer p{
+	position:relative;
+	border:1px solid #600;
+	border-left:none;
+	border-right:none;
+	margin:30px 0px;
+	position:absolute;
+	text-align:center;
+	text-indent:-9999px;
+	width:100%;
+	background-color:#900;
+	height:180px;
+	z-index:-2;
+}
+#footer a:before{
+	content:open-quote;
+}
+#footer a:after{
+	content:close-quote;
+}
+#footer a{
+	display:block;
+	position:fixed;
+	quotes:"▫◄| " " |►▫";
+	color:#700;
+	width:297px;
+	text-align:center;
+	margin:136px 0 0 -1px;
+	border:1px solid #700;
+	border-left:none;
+	border-right:none;
+	background-color:#fff;
+	padding-bottom:2px;
+	line-height:16px;
+	z-index:10;
+}
+#footer a:hover{
+	color:#fff;
+	background-color:#c60000;
+}
